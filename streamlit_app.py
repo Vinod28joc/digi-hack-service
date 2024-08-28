@@ -36,6 +36,10 @@ with st.form("my_form1"):
         st.write("Getting the response.....")
         st.write("Response here", data)
         st.write("status", data)
+        user_data = data["data"]
+        name = user_data["login"]["username"]
+        st.write("name", name)
+
         
 with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
