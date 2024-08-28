@@ -31,11 +31,18 @@ with st.form("my_form1"):
         st.write("Generating the sumamry for Customer ID", text_input1)
         url = "https://api.freeapi.app/api/v1/public/randomuser/user/random"
         headers = {'Accept': 'application/json'}
-        st.write("URL", url)
-        response = requests.get(url, headers=headers)   
-        st.write("Got the response.....")
-        st.write("Response here", response)
-        st.write("status", response)
+        st.write("URL: ", url)
+        data = requests.get(url, headers=headers)   
+        st.write("Getting the response.....")
+        st.write("Response here", data)
+        st.write("status", data)
+
+if data["success"] and "data" in data:
+    user_data = data["data"]
+    userName = user_data["login"]["username"]
+    st.write("Printing the username")
+    st.write("userName", userName)
+
         
 with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
