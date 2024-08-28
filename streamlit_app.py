@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('👽 Digi Hack Service')
 
-st.write('Hello world!')
+st.write('This service is build to summarise the customer intraction.')
