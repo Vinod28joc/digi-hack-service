@@ -28,7 +28,7 @@ date = st.date_input("Please select date 👇", value=None)
 with st.form("my_form1"):
     submitted = st.form_submit_button("Generate Summary")
     if submitted:
-        st.write("Generating the sumamry for Customer ID", text_input1")
+        st.write("Generating the sumamry for Customer ID", text_input1)
         response =  requests.get('https://randomeuser.me/api')   
         st.write("Response here", response)
 
