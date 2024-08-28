@@ -32,7 +32,7 @@ with st.form("my_form1"):
 with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
     if submitted:
-        st.write("Email has been sent to Customer ID", text_input1")
+        st.write("Email has been sent to Customer ID", text_input1)
 
 with st.form("my_form3"):
     submitted = st.form_submit_button(""Reset", type="primary"")
