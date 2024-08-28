@@ -5,7 +5,7 @@ st.title('👽 Digi Hack Service')
 
 st.info('This service is build to summarise the customer intraction.')
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     text_input = st.text_input(
@@ -19,5 +19,6 @@ with col2:
         placeholder="eg:brian@gmail.com",
     )
 
-d = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
-st.write("Your birthday is:", d)
+with col3:
+d = st.date_input("When's your birthday", , value=None)
+
