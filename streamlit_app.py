@@ -32,7 +32,7 @@ with st.form("my_form1"):
         url = "https://api.freeapi.app/api/v1/public/randomuser/user/random"
         headers = {'Accept': 'application/json'}
         st.write("URL", url)
-        response = requests.get(url, , headers=headers)   
+        response = requests.get(url, headers=headers)   
         st.write("Got the response.....")
         st.write("Response here", response.json())
         st.write("status", response)
