@@ -20,6 +20,9 @@ with col2:
     )
 d = st.date_input("When's your birthday", value=None)
 
+st.button("Generate Summary"): 
+
+
 
 
 
