@@ -34,7 +34,7 @@ with st.form("my_form1"):
         st.write("URL", url)
         response = requests.get(url, headers=headers)   
         st.write("Got the response.....")
-        st.write("Response here", response.json())
+        st.write("Response here", response)
         st.write("status", response)
         
 with st.form("my_form2"):
