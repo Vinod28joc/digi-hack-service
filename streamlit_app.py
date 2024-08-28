@@ -19,7 +19,7 @@ with col2:
         "Enter Email address 👇",
         placeholder="eg:brian@gmail.com",
     )
-date = st.date_input("When's your birthday", value=None)
+date = st.date_input("Please select date 👇", value=None)
 
 # st.button("Generate Summary") 
 # st.button("Send email") 
