@@ -18,7 +18,7 @@ with col2:
         "Enter Email address 👇",
         placeholder="eg:brian@gmail.com",
     )
-
+d = st.date_input("When's your birthday", value=None)
 
 
 
