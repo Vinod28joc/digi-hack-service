@@ -29,10 +29,12 @@ with st.form("my_form1"):
     submitted = st.form_submit_button("Generate Summary")
     if submitted:
         st.write("Generating the sumamry for Customer ID", text_input1)
-        response =  requests.get('https://randomeuser.me/api')   
-        st.write("Response here", response)
+        url = "https://api.freeapi.app/api/v1/public/randomuser/user/random"
+        st.write("URL", url)
+        response =  requests.get(url)   
+        st.write("Response here", response.json())
+        st.write("status", response)
 
-with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
     if submitted:
         st.write("Email has been sent to Customer ID", text_input1)
