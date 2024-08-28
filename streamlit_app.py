@@ -34,7 +34,8 @@ with st.form("my_form1"):
         response =  requests.get(url)   
         st.write("Response here", response.json())
         st.write("status", response)
-
+        
+with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
     if submitted:
         st.write("Email has been sent to Customer ID", text_input1)
