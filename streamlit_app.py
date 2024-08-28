@@ -18,4 +18,4 @@ with col2:
         placeholder="eg:brian@gmail.com",
     )
  with col3:   
- text_input = st.date_input("date", datetime.date(2019, 7, 6))   
+ text_input = st.date_input("When's your birthday", value=None)
