@@ -27,7 +27,7 @@ d = st.date_input("When's your birthday", value=None)
 with st.form("my_form1"):
     submitted = st.form_submit_button("Generate Summary")
     if submitted:
-        st.write("Generating the sumamry for Customer ID", text_input1👇, "\n\n Email body here")
+        st.write("Generating the sumamry for Customer ID", text_input1, "\n\n Email body here")
 
 with st.form("my_form2"):
     submitted = st.form_submit_button("Send email")
