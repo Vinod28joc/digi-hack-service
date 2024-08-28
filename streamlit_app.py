@@ -19,8 +19,7 @@ with col2:
         placeholder="eg:brian@gmail.com",
     )
 
-d = st.date_input("When's your birthday", value=None) 
-st.button("Generate Summary"): st.button("Send email"): st.button("Reset", type="primary")
+
 
 
 
