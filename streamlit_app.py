@@ -20,14 +20,24 @@ with col2:
     )
 d = st.date_input("When's your birthday", value=None)
 
-st.button("Generate Summary") 
-st.button("Send email") 
-st.button("Reset", type="primary")
+# st.button("Generate Summary") 
+# st.button("Send email") 
+# st.button("Reset", type="primary")
 
-with st.form("my_form"):
+with st.form("my_form1"):
     submitted = st.form_submit_button("Generate Summary")
     if submitted:
-        st.write("first input", text_input1, "second Input", text_input2)
+        st.write("Generating the sumamry for Customer ID", text_input1👇, "\n\n Email body here")
+
+with st.form("my_form2"):
+    submitted = st.form_submit_button("Send email")
+    if submitted:
+        st.write("Email has been sent to Customer ID", text_input1")
+
+with st.form("my_form3"):
+    submitted = st.form_submit_button(""Reset", type="primary"")
+    if submitted:
+        st.write("filed has been Reseted")
 
 
 
