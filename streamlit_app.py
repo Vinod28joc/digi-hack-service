@@ -40,6 +40,7 @@ with st.form("my_form3"):
         text_input1 = None
         text_input2 = None
         date = None
+        st.form(key, clear_on_submit=False, *, border=True)
         st.write("filed has been Reseted")
 
 
