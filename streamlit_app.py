@@ -18,7 +18,7 @@ with col2:
         "Enter Email address 👇",
         placeholder="eg:brian@gmail.com",
     )
-d = st.date_input("When's your birthday", value=None)
+date = st.date_input("When's your birthday", value=None)
 
 # st.button("Generate Summary") 
 # st.button("Send email") 
@@ -37,6 +37,9 @@ with st.form("my_form2"):
 with st.form("my_form3"):
     submitted = st.form_submit_button("Reset", type="primary")
     if submitted:
+        text_input1 = None
+        text_input2 = None
+        date = None
         st.write("filed has been Reseted")
 
 
